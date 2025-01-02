@@ -15,7 +15,7 @@ def get_stock_price(
 
 def main():
 	df = pd.read_csv('./raw_data/snp500.csv')
-	symbol_list = list(df['Symbol'])
+	symbol_list = list(df['Symbol'])[:2]
 
 	for symbol in symbol_list:
 		try:
@@ -25,7 +25,7 @@ def main():
 				start='2023-01-01',
 				end='2025-01-01',
 			)
-			df_price.to_csv('./raw_data/'+symbol+'_price.csv', index=False)
+			df_price.to_csv('./raw_data/'+symbol+'_price.csv')
 			et = time.time()
 			print (symbol, "\t", round(et-st, 2), "(s)")
 		except:

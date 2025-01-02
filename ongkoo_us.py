@@ -275,15 +275,19 @@ def summarize(
 		)
 
 
-def main(args):
+def main(
+		input_csv,
+		year,
+		month,
+		day,
+	):
 	st = time.time()
-	csv_path = args.input_csv
-	df = pd.read_csv(csv_path)
+	df = pd.read_csv(input_csv)
 	code_list = list(df['Symbol'])
 	name_list = list(df['Name'])
 
-	start = str(args.year-1) + '-' + str(args.month) + '-' + str(args.day)
-	end = str(args.year) + '-' + str(args.month) + '-' + str(args.day)
+	start = str(year-1) + '-' + str(month) + '-' + str(day)
+	end = str(year) + '-' + str(month) + '-' + str(day)
 
 	print (start, " ~ ", end)
 	
@@ -335,6 +339,7 @@ def main(args):
 	df_final['Noise'] = noise_list
 	df_final['Derivative'] = derivative_list
 	df_final = df_final.sort_values(by='Noise', ascending=True)
+
 	csv_path  = './results/STL_'+end+'.csv'
 	df_final.to_csv(csv_path, index=False)
 
@@ -356,6 +361,7 @@ def main(args):
 	et = time.time()
 	print ("Time for running:", round(et-st, 2), " (s)")
 
+
 if __name__ == '__main__':
 	parser = argparse.ArgumentParser()
 	parser.add_argument('-i', '--input_csv', type=str, default='./raw_data/snp500.csv', 
@@ -368,4 +374,9 @@ if __name__ == '__main__':
 						help='')
 	args = parser.parse_args()
 
-	main(args)
+	main(
+		input_csv=args.inpurt_csv,
+		year=args.year,
+		month=args.month,
+		day=args.day,
+	)
