@@ -15,13 +15,19 @@ def plot(
 		c_mix,
 		prefix,
 	):
+	ylabel = ''
+	if 'snp' in prefix:
+		ylabel = 'S&P500'
+	elif 'kospi' in prefix:
+		ylabel = 'KODEX 200'
+
 	x_ = [datetime.datetime.strptime(date, '%Y-%m-%d') for date in date_list]
 
 	cticks = [0.0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0]
 	fig = plt.figure(figsize=(20,8))
 	plt.plot(x_, close_list, lw=0.3)
 	plt.scatter(x_, close_list, c=c_noise, cmap='rainbow', s=20)
-	plt.ylabel('KODEX 200', fontsize=15)
+	plt.ylabel(ylabel, fontsize=15)
 	plt.xticks(fontsize=15)
 	plt.yticks(fontsize=15)
 	plt.colorbar(ticks=cticks)
@@ -31,7 +37,7 @@ def plot(
 	fig = plt.figure(figsize=(20,8))
 	plt.plot(x_, close_list, lw=0.3)
 	plt.scatter(x_, close_list, c=c_trend, cmap='rainbow', s=20)
-	plt.ylabel('KODEX 200', fontsize=15)
+	plt.ylabel(ylabel, fontsize=15)
 	plt.xticks(fontsize=15)
 	plt.yticks(fontsize=15)
 	plt.colorbar(ticks=cticks)
@@ -41,7 +47,7 @@ def plot(
 	fig = plt.figure(figsize=(20,8))
 	plt.plot(x_, close_list, lw=0.3)
 	plt.scatter(x_, close_list, c=c_mix, cmap='rainbow', s=20)
-	plt.ylabel('KODEX 200', fontsize=15)
+	plt.ylabel(ylabel, fontsize=15)
 	plt.xticks(fontsize=15)
 	plt.yticks(fontsize=15)
 	plt.colorbar(ticks=cticks)
