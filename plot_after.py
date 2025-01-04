@@ -53,6 +53,7 @@ def main(args):
 	df = pd.read_csv('./results/'+args.market+'_with_temperature.csv')[-4800:]
 
 	df_ = df[-240:]
+	print (df_)
 	date_list = list(df_['Date'])
 	close_list = list(df_['Close'])
 	noise_list = list(df_['T_noise'])

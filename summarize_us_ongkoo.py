@@ -6,8 +6,9 @@ import FinanceDataReader as fdr
 
 def get_temperature(val_list):
 	num_pos = np.sum(val_list > 0, axis=0)
-	temperature = round(100.0*float(num_pos) / val_list.shape[0],1)
+	temperature = round(float(num_pos) / val_list.shape[0], 3)
 	return	temperature
+
 
 def main():
 	df = pd.read_csv('./raw_data/snp500_2023_2025.csv')[239:]
