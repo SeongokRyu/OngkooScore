@@ -1,4 +1,5 @@
 import datetime
+import argparse
 
 import numpy as np
 import pandas as pd
@@ -48,32 +49,8 @@ def plot(
 	plt.savefig('./figures/'+prefix+'_mix.png')
 
 
-def main():
-	df = pd.read_csv('./results/kospi_with_temperature.csv')[-4800:]
-
-	'''
-	unit = 1200
-	num_ = len(df) // unit
-	for i in range(num_):
-		start = i*unit
-		end = (i+1)*unit
-		df_ = df[start:end]
-
-		date_list = list(df_['Date'])
-		close_list = list(df_['Close'])
-		noise_list = list(df_['T_noise'])
-		trend_list = list(df_['T_trend'])
-		mix_list = list(df_['T_mix'])
-
-		plot(
-			date_list=date_list, 
-			close_list=close_list, 
-			c_noise=noise_list,
-			c_trend=trend_list,
-			c_mix=mix_list,
-			prefix='plot_'+str(unit)+'_'+str(i)
-		)
-	'''
+def main(args):
+	df = pd.read_csv('./results/'+args.market+'_with_temperature.csv')[-4800:]
 
 	df_ = df[-240:]
 	date_list = list(df_['Date'])
@@ -88,8 +65,12 @@ def main():
 		c_noise=noise_list,
 		c_trend=trend_list,
 		c_mix=mix_list,
-		prefix='plot_recent'
+		prefix=args.market+'_recent'
 	)
 
 if __name__ == '__main__':
-	main()
+	parser = argparse.ArgumentParser()
+	parser.add_argument('-m', '--market', type=str, required=True, 
+						help='Options: kospi / snp')
+	args = parser.parse_args()
+	main(args)
