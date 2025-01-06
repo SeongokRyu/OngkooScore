@@ -26,7 +26,6 @@ Symbol,Market,Name,Sector,Industry,ListingDate,SettleMonth,Representative,HomePa
 005490,KOSPI,POSCO,1차 철강 제조업,"열연코일,냉연강판,후판,선재,스테인리스 제조",1988-06-10,12월,"대표이사 회장 최정우, 대표이사 사장 김학동, 대표이사 부사장 전중선",http://www.posco.co.kr,경상북도
 010950,KOSPI,S-Oil,석유 정제품 제조업,"석유제품,가스,윤활기유,윤활유,그리스,석유화학제품 제조,도매",1987-05-27,12월,Hussain A.Al-Qahtani,http://www.s-oil.com,서울특별시
 034120,KOSPI,SBS,텔레비전 방송업,"TV,라디오방송,광고",2003-06-25,12월,박정훈(단독대표),http://www.sbs.co.kr,서울특별시
-101060,KOSPI,SBS미디어홀딩스,텔레비전 방송업,지주회사,2008-03-24,12월,신경렬,http://www.sbsmedia.co.kr,서울특별시
 034730,KOSPI,SK,기타 금융업,"지주회사, 시스템통합(SI), 정보통신사업 관련 컨설팅,조사용역,정보통신기술 연구개발/정보통신기기,소프트웨어 개발,도매",2009-11-11,12월,"최태원, 장동현, 박성하",http://www.sk-inc.com/,서울특별시
 011790,KOSPI,SKC,기타 화학제품 제조업,"폴리에스테르필름,합성수지,LCD용 필름 제조",1997-07-18,12월,이완재,http://www.skc.kr,경기도
 210980,KOSPI,SK디앤디,부동산 임대 및 공급업,"비주거용 부동산개발 및 임대(오피스, 지식산업센터, 호텔 등)",2015-06-23,12월,함스테판윤성,http://www.skdnd.com,경기도
@@ -56,8 +55,6 @@ Symbol,Market,Name,Sector,Industry,ListingDate,SettleMonth,Representative,HomePa
 007340,KOSPI,디티알오토모티브,일차전지 및 축전지 제조업,자동차용 밧데리,1988-09-24,12월,김상헌 김원종,http://www.x-probattery.co.kr,울산광역시
 011170,KOSPI,롯데케미칼,기초 화학물질 제조업,"폴리프로필렌,고밀도폴리에틸렌,에틸렌글리콜,벤젠,에틸렌옥사이드,합성지,부산물 제조",1991-05-30,12월,"신동빈,김교현,이영준,황진구",http://www.lottechem.com,서울특별시
 138040,KOSPI,메리츠금융지주,기타 금융업,투자사업,2011-05-13,12월,김용범,http://www.meritzgroup.com,서울특별시
-008560,KOSPI,메리츠증권,금융 지원 서비스업,"유가증권의 위탁매매,자기매매,인수공모주선업무",1992-01-15,12월,최희문,http://www.imeritz.com,서울특별시
-000060,KOSPI,메리츠화재,보험업,"손해보험(화재,해상,운송보험)",1956-07-02,12월,김용범,http://www.meritzfire.com,서울특별시
 006800,KOSPI,미래에셋증권,금융 지원 서비스업,"유가증권매매,유가증권위탁매매,유가증권인수",1975-09-30,12월,"최현만, 김재식",http://securities.miraeasset.com,서울특별시
 006400,KOSPI,삼성SDI,일차전지 및 축전지 제조업,"2차전지, 전자재료 제조 판매",1979-02-27,12월,전영현,http://www.samsungsdi.co.kr,경기도
 207940,KOSPI,삼성바이오로직스,기초 의약물질 및 생물학적 제제 제조업,바이오의약품,2016-11-10,12월,임존종보 (Rim John Chongbo),http://www.samsungbiologics.com,인천광역시
@@ -117,7 +114,6 @@ Symbol,Market,Name,Sector,Industry,ListingDate,SettleMonth,Representative,HomePa
 005070,KOSPI,코스모신소재,기타 화학제품 제조업,"이차전지양극활물질,기능성필름",1987-09-28,12월,홍동환,http://www.cosmoamt.com,충청북도
 005420,KOSPI,코스모화학,기타 화학제품 제조업,"이산화티타늄 및 부산물, 황산코발트 및 부산물",1987-07-23,12월,안성덕,http://www.cosmochem.co.kr,서울특별시
 002020,KOSPI,코오롱,기타 금융업,지주회사,1975-06-23,12월,안병덕,http://www.kolon.com,경기도
-144620,KOSPI,코오롱머티리얼,화학섬유 제조업,"합성섬유 제조/직물 도매,무역",2012-04-05,12월,대표이사 전무 김철수,http://www.kolonfm.com,경기도
 120110,KOSPI,코오롱인더,화학섬유 제조업,"산업자재, 화학, 필름",2010-02-01,12월,"장희구, 유석진",,서울특별시
 138490,KOSPI,코오롱플라스틱,합성고무 및 플라스틱 물질 제조업,엔지니어링플라스틱,2011-06-15,12월,방민수,http://www.kolonplastics.com,경상북도
 039490,KOSPI,키움증권,금융 지원 서비스업,"유가증권의 매매, 위탁, 인수, 주선",2009-08-03,12월,이 현,http://www.kiwoom.com,서울특별시
@@ -182,7 +178,6 @@ Symbol,Market,Name,Sector,Industry,ListingDate,SettleMonth,Representative,HomePa
 122450,KOSDAQ,KMH,텔레비전 방송업,방송채널사업 및 방송송출서비스,2011-05-25,12월,"한찬수, 이강봉(각자 대표이사)",http://www.ikmh.co.kr,서울특별시
 178920,KOSDAQ,PI첨단소재,플라스틱제품 제조업,PI필름,2014-12-08,12월,김태림,http://www.pimaterials.com,충청북도
 036540,KOSDAQ,SFA반도체,반도체 제조업,"반도체패키지(SOP,DIP,QFP)",2001-05-02,12월,김영민,http://www.sts-semi.co.kr,충청남도
-036490,KOSDAQ,SK머티리얼즈,기초 화학물질 제조업,"반도체 및 디스플레이용 특수가스(NF3, SiH4, WF6 등)",1999-12-14,12월,이용욱,http://www.sk-materials.com,경상북도
 079940,KOSDAQ,가비아,소프트웨어 개발 및 공급업,"도메인,호스팅",2005-10-19,12월,김홍국,http://www.gabia.com,경기도
 198440,KOSDAQ,고려시멘트,"시멘트, 석회, 플라스터 및 그 제품 제조업","시멘트, 레미콘",2014-08-13,12월,구희택,http://koreacement.co.kr,전라남도
 049720,KOSDAQ,고려신용정보,기타 사업지원 서비스업,"채권추심, 신용조사",2002-01-31,12월,윤태훈,http://www.koryoinfo.co.kr,서울특별시

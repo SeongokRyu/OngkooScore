@@ -78,6 +78,6 @@ def main(args):
 if __name__ == '__main__':
 	parser = argparse.ArgumentParser()
 	parser.add_argument('-m', '--market', type=str, required=True, 
-						help='Options: kospi / snp')
+						help='Options: kr / us')
 	args = parser.parse_args()
 	main(args)
