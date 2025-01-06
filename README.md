@@ -1,5 +1,5 @@
 # OngkooScore
-Script for computing OngkooScore.
+Script for computing OngkooScore. \
 This script is parallelized with Ray.
 
 ```bash
