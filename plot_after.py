@@ -16,9 +16,9 @@ def plot(
 		prefix,
 	):
 	ylabel = ''
-	if 'snp' in prefix:
+	if 'us' in prefix:
 		ylabel = 'S&P500'
-	elif 'kospi' in prefix:
+	elif 'kr' in prefix:
 		ylabel = 'KODEX 200'
 
 	x_ = [datetime.datetime.strptime(date, '%Y-%m-%d') for date in date_list]
