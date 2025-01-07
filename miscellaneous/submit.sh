@@ -10,4 +10,4 @@
 
 
 # Hidden dimension
-python -u ongkoo_score.py -m us -d 2025-01-04  > ongkoo_us.log
+python -u ongkoo_score.py -m us -d 2025-01-07  > ongkoo_us.log
