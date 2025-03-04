@@ -1,0 +1,17 @@
+2024-02-28  ~  2025-02-28
+Traceback (most recent call last):
+  File "/home/seongok/works/projects/OngkooScore/ongkoo_score.py", line 330, in <module>
+    main(args)
+  File "/home/seongok/works/projects/OngkooScore/ongkoo_score.py", line 261, in main
+    df_price = get_price(code=code, start=start, end=end)
+  File "/home/seongok/works/projects/OngkooScore/libs/utils.py", line 39, in get_price
+    df = fdr.DataReader(code, start, end)
+  File "/home/seongok/anaconda3/envs/ongkoo/lib/python3.10/site-packages/FinanceDataReader/data.py", line 92, in DataReader
+    return YahooDailyReader(codes, start, end).read()
+  File "/home/seongok/anaconda3/envs/ongkoo/lib/python3.10/site-packages/FinanceDataReader/yahoo/data.py", line 61, in read
+    return _yahoo_data_reader(self.symbol, self.exchange, self.start, self.end)
+  File "/home/seongok/anaconda3/envs/ongkoo/lib/python3.10/site-packages/FinanceDataReader/yahoo/data.py", line 38, in _yahoo_data_reader
+    r.raise_for_status()
+  File "/home/seongok/anaconda3/envs/ongkoo/lib/python3.10/site-packages/requests/models.py", line 1024, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 500 Server Error: Internal Server Error for url: https://query2.finance.yahoo.com/v8/finance/chart/LEN?period1=1709046000&period2=1740668400&interval=1d&includeAdjustedClose=true

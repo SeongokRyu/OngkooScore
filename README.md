@@ -1,9 +1,14 @@
 # OngkooScore
-Script for computing OngkooScore
-
+Script for computing OngkooScore. \
+This script is parallelized with Ray.
 
 ```bash
-# Main command
-python daily_stl.py -i ./raw_data/interest.csv -y 2025 -m 01 -d 02
-python plot_after.py 
+# Command to obtain Ongkoo score for Korea market
+python ongkoo_score --market kr --date 2025-01-07
+python plot_after.py
+
+# Command to obtain Ongkoo score for Korea market
+python ongkoo_score --market us --date 2025-01-07
+python plot_after.py
 ```
+
